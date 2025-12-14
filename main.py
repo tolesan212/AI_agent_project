@@ -3,6 +3,7 @@ import sys
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types # type information/hinting for api
+from functions.get_files_info import get_files_info #import function from functions folder
 
 def main():
     # Load genai with api key from environment variable
@@ -53,3 +54,7 @@ def main():
 
 
 main()
+
+#Execute get_files_info from functions folder/directory
+#print(get_files_info("calculator", "pkg"))
+#print(get_files_info("calculator"))

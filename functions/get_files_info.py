@@ -1,5 +1,6 @@
 import os
 
+# Example usage
 #- README.md: file_size=1032 bytes, is_dir=False
 #- src: file_size=128 bytes, is_dir=True
 #- package.json: file_size=1234 bytes, is_dir=False
@@ -7,8 +8,15 @@ import os
 
 def get_files_info(working_directory, directory="."):
     abs_working_dir = os.path.abspath(working_directory) #absolute path of working directory
-    abs_directory = os.path.abspath(directory) #absolute path of specified directory
+    abs_directory = os.path.abspath(os.path.join(working_directory, directory)) #absolute path of the specified directory
+    #abs_directory = ""
+    # if directory is None:
+    #     #directory = working_directory
+    #     abs_directory = os.path.abspath(working_directory)
+    # else:
+    #     abs_directory = os.path.abspath(os.path.join(working_directory, directory)) #absolute path of the specified directory
 
+    
     #If the absolute directory is not in the working directory, its outside of it, and we return an error message
     if not abs_directory.startswith(abs_working_dir):
         return f'Error: The specified directory "{directory}" is not within the working directory.'
