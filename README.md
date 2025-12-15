@@ -5,6 +5,7 @@ main.py - main file, loads genai, recieves prompt and generates response
 functions (contains building tools to interact with)
     -get_file_content.py (shows all info from files in specified directory, under working directory)
     -get_file_content.py (gets content from the directory)
+    -write_file.py (writes content on file)
 
 calculator(simple calculator program used for testing, gotten from boot.dev)
 

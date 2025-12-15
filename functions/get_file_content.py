@@ -11,7 +11,7 @@ def get_file_content(working_directory, file_path):
     if not abs_file_path.startswith(abs_working_dir):
         return f'Error: File path "{file_path}" is outside the working directory'
     if not os.path.isfile(abs_file_path):
-        return f'Error: file "{file_path}" does not a file'
+        return f'Error: file "{file_path}" is not a file'
 
     file_content_string = ''
 
