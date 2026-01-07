@@ -23,7 +23,6 @@ def main():
         verbose_flag = True
 
 
-
     # sys.argv[0] = name of file
     # sys.argv[1] = prompt, first command line argument
     prompt = sys.argv[1]
