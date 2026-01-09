@@ -17,6 +17,7 @@ def main():
     # pkg_contents = get_files_info(working_dir, "../") # ../ walks up one directory
     # print(pkg_contents)
 
+
     # #test get_file_content
     # #print(get_file_content(working_dir, "lorem.txt")) #warning: this file is large, may take a while to print
     # print(get_file_content(working_dir, "main.py"))
