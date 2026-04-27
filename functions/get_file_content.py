@@ -15,6 +15,7 @@ def get_file_content(working_directory, file_path):
 
     file_content_string = ''
 
+
     try:
         with open(abs_file_path, 'r') as f:
             file_content_string = f.read(MAX_CHARS)
